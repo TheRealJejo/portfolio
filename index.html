@@ -1,14 +1,120 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Título da página</title>
-    <meta charset="utf-8">
-    <link rel='stylesheet' href="css/style.css">
-  </head>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Seu Nome.">
+  <title>Seu Nome — meu desktop pessoal</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+  <main class="desktop" id="inicio">
+    <div class="desktop__topbar" aria-label="Informações do desktop">
+      <a class="brand-mini" href="#inicio">
+        <img src="assets/logo.svg" alt="Logo do portfólio">
+        <span>seu-portfolio.exe</span>
+      </a>
+      <span class="status">online / estudando web</span>
+    </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <section class="window window--welcome" aria-labelledby="welcome-title">
+      <header class="window__bar">
+        <div class="window__title">
+          <span class="window__dots" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span>welcome.txt</span>
+        </div>
+        <span class="window__controls" aria-hidden="true">— □ ×</span>
+      </header>
 
+      <div class="window__body">
+        <div class="intro">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1 id="welcome-title">Seu Nome<span>!</span></h1>
+          <p class="intro__text">
+            Este é o meu pequeno espaço na internet. Aqui eu reúno projetos,
+            estudos, imagens e coisas que estou aprendendo a criar.
+          </p>
+          <a class="button" href="#projetos">abrir projetos <span>↗</span></a>
+        </div>
+
+        <div class="avatar-card" aria-label="Espaço reservado para seu avatar ou foto">
+          <div class="avatar-card__screen">
+            <span class="avatar-card__star">✦</span>
+            <span class="avatar-card__initials">SN</span>
+            <span class="avatar-card__caption">seu avatar aqui</span>
+          </div>
+          <span class="avatar-card__label">/home/voce</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="dock" aria-label="Navegação principal">
+      <a class="dock__item dock__item--active" href="#sobre">
+        <span class="dock__icon">◎</span>
+        <span>sobre</span>
+      </a>
+      <a class="dock__item" href="#projetos">
+        <span class="dock__icon">▣</span>
+        <span>projetos</span>
+      </a>
+      <a class="dock__item" href="#galeria">
+        <span class="dock__icon">▧</span>
+        <span>galeria</span>
+      </a>
+      <a class="dock__item" href="#contato">
+        <span class="dock__icon">✉</span>
+        <span>contato</span>
+      </a>
+    </nav>
+  </main>
+
+  <section class="content-section" id="sobre">
+    <p class="eyebrow">01 / sobre</p>
+    <h2>Quem está por trás da tela?</h2>
+    <p>
+      Escreva aqui uma apresentação curta sobre você, sua área de estudo,
+      seus interesses e o tipo de trabalho que gostaria de mostrar.
+    </p>
+  </section>
+
+  <section class="content-section content-section--dark" id="projetos">
+    <p class="eyebrow">02 / projetos</p>
+    <h2>Coisas que estou construindo.</h2>
+    <div class="placeholder-grid">
+      <article class="placeholder-card">
+        <span class="placeholder-card__number">01</span>
+        <h3>Projeto em destaque</h3>
+        <p>Substitua este texto pela descrição de um projeto.</p>
+      </article>
+      <article class="placeholder-card">
+        <span class="placeholder-card__number">02</span>
+        <h3>Estudo ou experimento</h3>
+        <p>Use este espaço para mostrar seu processo.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="galeria">
+    <p class="eyebrow">03 / galeria</p>
+    <h2>Imagens, desenhos e referências.</h2>
+    <div class="gallery-placeholder">
+      <span>adicione suas imagens em assets/images/</span>
+    </div>
+  </section>
+
+  <section class="content-section content-section--coral" id="contato">
+    <p class="eyebrow">04 / contato</p>
+    <h2>Vamos conversar?</h2>
+    <p>Troque este texto pelos seus links e formas de contato.</p>
+    <a class="button button--dark" href="mailto:seuemail@exemplo.com">seuemail@exemplo.com <span>↗</span></a>
+  </section>
+
+  <footer class="footer">
+    <span>feito por Seu Nome</span>
+    <a href="#inicio">voltar ao topo ↑</a>
+  </footer>
 </body>
 </html>
