@@ -1,7 +1,3 @@
-/* =====================================================
-   DESKTOPFOLIO — base didática em HTML + CSS
-   Troque as variáveis abaixo para personalizar o projeto.
-   ===================================================== */
 
 :root {
   --desk: #d8e5d5;
@@ -18,7 +14,7 @@
   --mono: "Courier New", Courier, monospace;
 }
 
-/* Reset pequeno e previsível */
+
 * {
   box-sizing: border-box;
 }
@@ -39,7 +35,6 @@ a {
   color: inherit;
 }
 
-/* Área de trabalho inicial */
 .desktop {
   position: relative;
   min-height: 100svh;
@@ -93,7 +88,6 @@ a {
   opacity: .72;
 }
 
-/* Janela principal */
 .window {
   width: min(100%, 920px);
   min-height: 500px;
@@ -232,7 +226,6 @@ h1 span {
   box-shadow: 4px 4px 0 var(--paper);
 }
 
-/* Espaço provisório para seu avatar */
 .avatar-card {
   width: min(100%, 270px);
   margin: 0 auto;
@@ -304,7 +297,6 @@ h1 span {
   text-align: right;
 }
 
-/* Dock inferior */
 .dock {
   position: fixed;
   bottom: 22px;
@@ -352,7 +344,6 @@ h1 span {
   font-size: 15px;
 }
 
-/* Seções que aparecem depois do desktop */
 .content-section {
   padding: clamp(76px, 12vw, 150px) clamp(20px, 8vw, 120px);
   background: var(--paper);
@@ -448,7 +439,6 @@ h1 span {
   color: var(--coral);
 }
 
-/* Adaptação para celular */
 @media (max-width: 720px) {
   .desktop {
     padding-top: 18px;
@@ -490,7 +480,6 @@ h1 span {
   }
 }
 
-/* Acessibilidade para quem prefere menos movimento */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
